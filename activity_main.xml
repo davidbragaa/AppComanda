@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        app:srcCompat="@drawable/old_town_pub_ativo_6" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor total da conta:"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/valor_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Taxa de serviço (%):" />
+
+    <EditText
+        android:id="@+id/taxa_servico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantidade de pessoas:" />
+
+    <EditText
+        android:id="@+id/quantidade_pessoas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantidade de casais:" />
+
+    <EditText
+        android:id="@+id/quantidade_casais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/calcular_pessoa"
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
+        android:text="Totalizar serviço por Pessoa" />
+
+
+
+    <Button
+        android:id="@+id/calcular_casal"
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:text="Totalizar serviço por casal" />
+
+
+    <Button
+        android:id="@+id/calcular_ambos"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:text="totalizar serviço por pessoa e casal" />
+
+    <TextView
+        android:id="@+id/resultadoPessoaCasalSemServico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:text="Total Geral Bruto sem Serviço:" />
+    <TextView
+        android:id="@+id/resultadoPessoaCasalServico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:text="Total do Serviço" />
+    <TextView
+        android:id="@+id/resultadoPessoaCasalComServico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:text="Total Geral com Serviço:" />
+
+</LinearLayout>
